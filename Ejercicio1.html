@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Ejecicio 1</title>
+</head>
+<body>
+    <script>
+        function algoritmo(){
+            let centimetros, metros, pies, pulgadas, yarda;
+            metros = parseFloat (document.formulario1.metros.value);
+            centimetros=metros*100;
+            pulgadas=centimetros/2.54;
+            pies=pulgadas/12;
+            yarda=pies/3;
+            document.formulario1.centimetros.value = centimetros;
+            document.formulario1.pies.value = pies;
+            document.formulario1.pulgadas.value = pulgadas;
+            document.formulario1.yarda.value = yarda;
+        }
+ 
+        </script>
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="metros">Ingresa el valor de metros:</label>
+                        </td>
+                        <td>
+                            <input name="metros" required="required" step="" type="number" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="centimetros">Valor en centimetros:</label>
+                        </td>
+                        <td>
+                            <input name="centimetros" step="" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pies">Valor en pies:</label>
+                        </td>
+                        <td>
+                            <input name="pies" step="" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pulgadas">Valor en pulgadas:</label>
+                        </td>
+                        <td>
+                            <input name="pulgadas" step="" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="yarda">Valor en yardas:</label>
+                        </td>
+                        <td>
+                            <input name="yarda" step="" type="number" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

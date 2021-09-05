@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+    background:#a2bb33;
+    background-position: center;
+    height: 100vh;
+}
+#num {
+    color: rgb(0, 0, 0);
+    border: 2px solid #ccc;
+    padding: 2 2rem;
+    margin: 2rem;
+    width: 200px;
+    text-align: center;
+    position: relative;
+  }
+#button {
+    display: right;
+    width:150px;
+    margin:10px auto;
+    padding:7px 13px;
+    text-align:center;
+    background:#c8d398;
+    font-size:20px;
+    font-family: 'Arial', sans-serif;
+    color:#ffffff;
+    white-space: nowrap;
+
+}
+
+#button:active {
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+.one a {
+    text-decoration: none;
+}
+input[type=number] {
+    width: 100%;
+    padding: 7px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+input[type=button], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.label {
+    color: white;
+    padding: 8px;
+  }
+  input, textarea, select, button {
+    width : 150px;
+    margin: 0;
+  
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+       -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+            box-sizing: border-box;
+  }
+  form {
+    position: relative;
+  
+    width  : 740px;
+    height : 498px;
+    margin : 0 auto;
+  
+    background: #FFF url(background.jpg);
+  }

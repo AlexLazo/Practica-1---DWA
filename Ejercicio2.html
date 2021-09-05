@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <label for="num">Introduce un número: </label>
+    <input type="number" name="" id="num">
+    
+    <button onclick="multi()" id="button">Tablas</button>
+    
+    <div id="tabla-multi"></div>
+    <script>
+        const inputNum = document.getElementById("num")
+        const tablaMulti = document.getElementById("tabla-multi")
+        function multi() {
+            const numero = parseInt(inputNum.value)
+            let template = ''
+            
+            for (let i = 1; i <= 10; i++) {
+                template += numero + "x" + i + "=" + numero * i + "<br>"
+            }
+        tablaMulti.innerHTML = template
+}
+    </script>
+</body>
+</html>
